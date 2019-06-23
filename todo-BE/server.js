@@ -53,7 +53,11 @@ todoRoutes.route('/add').post(function(req, res) {
             res.status(400).send('adding new todo failed');
         });
 });
+<<<<<<< HEAD
 app.use('/todo', todoRoutes);
+=======
+app.use('/todos', todoRoutes);
+>>>>>>> bb423751a39aa239c5e9eef6eaed2d93cd7d046b
 app.listen(PORT, function() {
     console.log("Server is running on Port: " + PORT);
 });
