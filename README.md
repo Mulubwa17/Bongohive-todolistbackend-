@@ -1,5 +1,6 @@
 # Bongohive-todolistbackend-
 todo list backend files created by Mulubwa Chungu(email:mulubwac@gmail.com)
+
 SETTING UP THE ENVIRONMENT IN TESTING MODE
 
 Before starting up, you will need to setup the environment for compatibility. Below are the necesary tools and packages that are needed for the server to run. HARDWARE REQUIREMENTS
@@ -14,6 +15,8 @@ Mongo DB version 4.0.3
 Yarn version 1.16.0
 Supported Operating Systems
     - All operating systems
+
+
 STARTING UP THE SERVER
 
 To set up the server, you will have to do the following;
@@ -27,5 +30,9 @@ When packages are installed, run the command 'yarn start' to start the server
 This should start the server which will be running on the displayed port 3003
 
 RUNNING THE SERVER
+
+
 Yarn Start :This will run the server
+
+
 Yarn Test: This will test the APIs created in ther server
