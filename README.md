@@ -32,7 +32,7 @@ This should start the server which will be running on the displayed port 3003
 RUNNING THE SERVER
 
 
-Yarn Start :This will run the server
+Yarn Start :This will run the server using nodemon throught the server.js file
 
 
-Yarn Test: This will test the APIs created in ther server
+Yarn Test: This will test the APIs created in the server through the test.js file
