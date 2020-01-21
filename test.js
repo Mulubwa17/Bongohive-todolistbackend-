@@ -38,7 +38,7 @@ describe(" TODO API TESTS", done => {
       .get("/api/v1/list")
       .send();
     chai.expect(response.status).to.equal(200);
-  }); //ends get all user list
+  }); //ends get todo list
 
   it("PUT /api/v1/:id should update a todo in the collection", async () => {
     const todo = {
@@ -56,6 +56,16 @@ describe(" TODO API TESTS", done => {
       .put("/api/v1/:id")
       .send(todo);
     chai.expect(response.status).to.equal(200);
-  }); //ends user update
+  }); //ends todo update
 
 })
+
+it("DELETE /api/v1/:userId should delete a todo in the collection", async () => {
+  const query = {
+    userId: "5e217c6db189fe53c42e8b82"
+  };
+  const response = await request(server)
+    .delete("/api/v1/:userId")
+    .send(query);
+  chai.expect(response.status).to.equal(200);
+});//ends todo delete

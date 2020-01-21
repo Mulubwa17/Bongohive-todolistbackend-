@@ -56,3 +56,29 @@ exports.updateTodo = async (req, res, next) => {
          next(error)
         }
        }
+
+exports.deleteTodo = async (req, res, next) => {
+
+  try {
+       
+      const userId = req.params.userId;
+       
+      await Todo.findByIdAndDelete(userId);
+       
+      res.status(200).json({
+       
+          data: null,
+       
+          message: 'Todo has been deleted'
+       
+         });
+       
+        } catch (error) {
+       
+         next(error)
+       
+        }
+       
+       }
+       
+       
